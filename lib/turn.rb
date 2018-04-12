@@ -37,6 +37,7 @@ def move(board, index, character = "X")
 end
 
 def turn(board)
+<<<<<<< HEAD
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
@@ -46,6 +47,16 @@ def turn(board)
   else
     puts "Wrong entry. Please try again."
     turn(board)
+=======
+  until 
+  puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
+  if valid_move?(board, index) == true
+    move(board, index, character = "X")
+  else
+    puts "Wrong entry. Please try again."
+>>>>>>> 77e54bba0ed29850ecfb8ae2ee6fb12696b5fa52
   end
 end
 
